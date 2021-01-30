@@ -1,4 +1,4 @@
-name: Build OpenWrt
+name: Build OpenWrt for newifi_d2
 
 on:
   repository_dispatch:
