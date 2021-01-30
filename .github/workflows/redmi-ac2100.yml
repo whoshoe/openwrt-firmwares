@@ -1,4 +1,4 @@
-name: Build OpenWrt
+name: Build OpenWrt For redmi_ac2100
 
 on:
   repository_dispatch:
