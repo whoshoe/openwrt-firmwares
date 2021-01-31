@@ -1,5 +1,7 @@
 # Build OpenWrt using GitHub Actions
 ![Linksys WRT32X](https://github.com/whoshoe/openwrt-firmwares/workflows/Linksys%20WRT32X/badge.svg)
+![Newifi D2](https://github.com/whoshoe/openwrt-firmwares/workflows/Newifi%20D2/badge.svg)
+![Redmi AC2100](https://github.com/whoshoe/openwrt-firmwares/workflows/Build%Redmi%20AC2100/badge.svg)
 
 This repository is mainly for personal use. The goal is to automate the build process for routers using GitHub Actions.
 Supported routers:
