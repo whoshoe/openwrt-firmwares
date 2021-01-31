@@ -1,5 +1,6 @@
 # Build OpenWrt using GitHub Actions
-![Linksys WRT32X](https://github.com/whoshoe/openwrt-firmwares/blob/main/.github/workflows/wrt32x.yml/badge.svg)
+![Linksys WRT32X](https://github.com/whoshoe/openwrt-firmwares/workflows/Linksys%20WRT32X/badge.svg)
+
 This repository is mainly for personal use. The goal is to automate the build process for routers using GitHub Actions.
 Supported routers:
 - Linksys WRT32X/WRT32XB
