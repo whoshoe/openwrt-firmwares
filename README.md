@@ -38,4 +38,4 @@ Xiaomi Redmi AC2100 packages
 - [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 ## License
 
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © P3TERX
+[MIT](https://github.com/whoshoe/openwrt-firmwares//blob/main/LICENSE)
