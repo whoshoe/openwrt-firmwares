@@ -1,4 +1,4 @@
-name: Build OpenWrt for Linksys WRT32X
+name: Linksys WRT32X
 
 on:
   repository_dispatch:
