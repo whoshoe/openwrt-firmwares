@@ -3,7 +3,7 @@
 This repository is mainly for personal use. The goal is to automate the build process for routers using GitHub Actions.
 Supported routers:
 - Linksys WRT32X/WRT32XB
-- Newifi D2 (Open source wireless drivers for 2.4G and 5G are used instead of proprietary drivers)
+- Newifi D2
 - Xiaomi Redmi AC2100
 
 Note: 
