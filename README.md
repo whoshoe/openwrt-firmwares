@@ -1,27 +1,24 @@
-# Actions-OpenWrt
+# Build OpenWrt using GitHub Actions
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
+This repository is mainly for personal use. The goal is to automate the build process for routers using GitHub Actions.
+Supported routers:
+- Linksys WRT32X/WRT32XB
+- Newifi D2 (Open source wireless drivers for 2.4G and 5G are used instead of proprietary drivers)
+- Xiaomi Redmi AC2100
 
-Build OpenWrt using GitHub Actions
+Note: 
+Considering the instability of proprietary drivers which could cause dropped signal or random downtime. For Newifi D2 and Xiaomi Redmi AC2100, open source wireless drivers (for both 2.4G and 5G) are used instead of proprietary drivers.
 
-[Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
-
-## Usage
-
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository.
-- Select `Build OpenWrt` on the Actions page.
-- Click the `Run workflow` button.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
-
-## Tips
-
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
-
+Newifi D2 packages
+  - kmod-mt7603
+  - kmod-mt76x2
+  - wpad-openssl
+  
+Xiaomi Redmi AC2100 packages
+  - kmod-mt7603
+  - kmod-mt7615e
+  - kmod-mt7615-firmware
+  - wpad-openssl
 ## Acknowledgments
 
 - [Microsoft Azure](https://azure.microsoft.com)
@@ -38,7 +35,7 @@ Build OpenWrt using GitHub Actions
 - [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
-
+- [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 ## License
 
 [MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © P3TERX
