@@ -1,4 +1,4 @@
-name:rpi_4b
+name: rpi_4b
 
 on:
   repository_dispatch:
