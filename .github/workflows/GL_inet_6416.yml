@@ -1,4 +1,4 @@
-name: Redmi GL_inet_4616
+name: GL_inet_6416
 
 on:
   repository_dispatch:
