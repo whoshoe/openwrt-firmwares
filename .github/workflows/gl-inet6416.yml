@@ -1,4 +1,4 @@
-name: GL-inet6416
+name: gl-inet6416
 
 on:
   repository_dispatch:
