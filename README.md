@@ -1,51 +1,89 @@
-# Build OpenWrt using GitHub Actions
-![Linksys WRT32X](https://github.com/whoshoe/openwrt-firmwares/workflows/Linksys%20WRT32X/badge.svg)
-![Newifi D2](https://github.com/whoshoe/openwrt-firmwares/workflows/Newifi%20D2/badge.svg)
-![Redmi AC2100](https://github.com/whoshoe/openwrt-firmwares/workflows/Redmi%20AC2100/badge.svg)
-![Raspberry Pi 4B](https://github.com/whoshoe/openwrt-firmwares/workflows/Raspberry%20Pi%204B/badge.svg)
+![kenzo’s github stats](https://github-readme-stats.vercel.app/api?username=kenzo&show_icons=true&theme=merko)
+<div align="center">
+<h1 align="center"openwrt-packages</h1>
+<img src="https://img.shields.io/github/issues/kenzok8/openwrt-packages?color=green">
+<img src="https://img.shields.io/github/stars/kenzok8/openwrt-packages?color=yellow">
+<img src="https://img.shields.io/github/forks/kenzok8/openwrt-packages?color=orange">
+<img src="https://img.shields.io/github/license/kenzok8/openwrt-packages?color=ff69b4">
+<img src="https://img.shields.io/github/languages/code-size/kenzok8/openwrt-packages?color=blueviolet">
+</div>
 
-This repository is mainly for personal use. The goal is to automate the build process for routers using GitHub Actions.
-Supported routers:
-- Linksys WRT32X/WRT32XB
-- Newifi D2
-- Xiaomi Redmi AC2100
-- Raspberry Pi 4B
+#### 说明
 
-Note: 
-Considering the instability of proprietary drivers which could cause dropped signal or random downtime. For Newifi D2 and Xiaomi Redmi AC2100, open source wireless drivers (for both 2.4G and 5G) are used instead of proprietary drivers.
+* 软件不定期同步大神库更新，适合一键下载到package目录下，用于openwrt编译
 
-Newifi D2 packages
-  - kmod-mt7603
-  - kmod-mt76x2
-  - wpad-openssl
-  
-Xiaomi Redmi AC2100 packages
-  - kmod-mt7603
-  - kmod-mt7615e
-  - kmod-mt7615-firmware
-  - wpad-openssl
 
-Raspberry Pi 4B USB driver
-  - kmod-usb-net-asix (works for asix AX88772B chip)
-  - kmod-usb-net-rtl8152 (works for RTL8153 chip)
+* 作为搬运工，passwall的依赖一并找齐了
 
-## Acknowledgments
 
-- [Microsoft Azure](https://azure.microsoft.com)
-- [GitHub Actions](https://github.com/features/actions)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cowtransfer](https://cowtransfer.com)
-- [WeTransfer](https://wetransfer.com/)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
-- [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
-- [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
-- [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
-- [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
-## License
 
-[MIT](https://github.com/whoshoe/openwrt-firmwares//blob/main/LICENSE)
+- [passwall依赖库下载链接，注意！在openwrt或者lean源码下编译passwall，要下载此依赖库](https://github.com/kenzok8/small.git)
+
+
+- [或者Lienol   passwall新库地址](https://github.com/xiaorouji/openwrt-passwall.git)
+ 
+
+
+1、 lede/package$下运行 或者openwrt/package$下运行
+
+
+```bash
+ git clone https://github.com/kenzok8/openwrt-packages.git
+```
+
+ 2、 或者添加下面代码到 openwrt 或lede源码根目录feeds.conf.default文件
+ 
+```bash
+ src-git kenzo https://github.com/kenzok8/openwrt-packages
+```
+
+ 3、 passwall依赖
+ 
+ ```bash
+ src-git small https://github.com/kenzok8/small
+ ```
+ 
+- openwrt 固件编译自定义主题与软件
+- luci-app-vssr            ------------------vssr老竭力
+- luci-app-dnsfilter       ------------------基于DNS的广告过滤
+- luci-app-openclash       ------------------openclash图形         
+- luci-app-advancedsetting ------------------系统高级设置
+- luci-app-serverchan      ------------------Server酱 微信/Telegram 推送的插件
+- luci-theme-ifit          ------------------透明主题（适配18.06修复主机名错误）
+- luci-theme-atmaterial    ------------------atmaterial 三合一主题（适配18.06）     
+- luci-app-aliddns         ------------------阿里云ddns
+- luci-app-eqos            ------------------依IP地址限速
+- luci-app-gost            ------------------隐蔽的https代理
+- luci-app-adguardhome     ------------------去广告 
+- luci-app-smartdns        ------------------smartdns防污染
+- luci-app-passwall        ------------------Lienol大神 
+- luci-theme-argon_new     ------------------二合蓝 紫主题
+- luci-app-ssr-plus        ------------------Lean大神 
+- luci-theme-opentomcat    ------------------修复主机名错误（适配18.06）  
+- luci-theme-opentomato    ------------------修复主机名错误（适配18.06）
+#### 注意
+
+* Lean大近期修改源码后，主题适配！
+
+
+
+![暗黄主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-9.jpg)
+![暗黄主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-10.jpg)
+![暗黄主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-11.jpg)
+![暗黑红主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-5.jpg)
+![暗黑红主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-6.jpg)
+![暗黑红主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-7.jpg)
+![暗黑红主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-8.jpg)
+![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-12.jpg)
+![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-13.jpg)
+![抹茶绿主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-14.jpg)
+![argon主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-1.png)
+![argon主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-2.png)
+![argon主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-3.png)
+![argon主题](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/sshot-4.png)
+* 修复opentomato 与opentomcat修改主机名无效的bug
+![修复tomto不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-719.png)
+![修复tomto不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-722.png)
+![修复cat不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-720.png)
+![修复cat不能修改主机名的bug](https://raw.githubusercontent.com/kenzok8/openwrt-packages/master/screenshot/%E5%B0%8F%E7%8C%AA%E5%AE%B6-721.png)
+
