@@ -1,15 +1,15 @@
-名称:op_gl-usb150
+名称: Build_op-gl-usb150
 
-在：
-  存储库调度：
-  工作流调度：
-    输入：
-      SSH：
-        描述：'SSH 连接到 Actions'
-        要求：假
-        默认值：'假'
+ 在：
+   存储库调度：
+   工作流调度：
+     输入：
+       SSH：
+         描述：'SSH 连接到 Actions'
+         要求：假
+         默认值：'假'
 
-环境：
+ 环境：
   REPO_URL：https://github.com/coolsnowwolf/lede
   REPO_BRANCH：主
   FEEDS_CONF：feeds.conf.default
@@ -24,7 +24,8 @@
   TZ：亚洲/上海
 
 工作：
-  建造：
+
+    建造：
     运行： ubuntu-18.04
 
     脚步：
