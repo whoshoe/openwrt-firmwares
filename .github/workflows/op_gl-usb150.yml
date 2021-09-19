@@ -72,7 +72,7 @@
       用途：P3TERX/ssh2actions@v1.0.0
       如果：(github.event.inputs.ssh == 'true' && github.event.inputs.ssh != 'false') || 包含（github.event.action，'ssh'）
       环境：
-        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        TELEGRAM_CHAT_ID:${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN：${{secrets.TELEGRAM_BOT_TOKEN }}
 
     - 名称：下载包
@@ -158,13 +158,13 @@
       用途：GitRML/delete-workflow-runs@main
       和：
         保留天数：1
-        keep_minimum_runs: 3
+        keep_minimum_runs:3
 
     - 名称：删除旧版本
       用途：dev-drprasad/delete-older-releases@v0.1.0
       如果：env.UPLOAD_RELEASE == 'true' && !cancelled()
       和：
         保持最新：9
-        delete_tags: 真
+        delete_tags:真
       环境：
         GITHUB_TOKEN：${{secrets.GITHUB_TOKEN }}
