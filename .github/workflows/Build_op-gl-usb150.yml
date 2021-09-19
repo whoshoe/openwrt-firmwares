@@ -170,7 +170,7 @@
       环境：
         GITHUB_TOKEN：${{secrets.GITHUB_TOKEN }}
 
-- name: Remove old Releases
+    - name: Remove old Releass
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
