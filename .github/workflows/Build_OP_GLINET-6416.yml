@@ -1,25 +1,28 @@
-#=================================================
+#
+# Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
-# Lisence: MIT
-# Author: eSirPlayground
-# Youtube Channel: https://goo.gl/fvkdwm 
-#=================================================
+#
 
-name: Build_GLINET_6416
+name: Build openwrt-GLINET_6416
 
 on: 
   release:
     types: [published]
 
-  #push:
-  #  branches: 
-  #    - master
+  push:
+    branches: 
+      - master
 
-  #schedule:
-  #  - cron: 0 8 * * 5
+  schedule:
+    - cron: 0 8 * * 5
   
-  #watch:
-  #  types: [started]
+  watch:
+    types: [started]
 
 jobs:
   build:
@@ -76,7 +79,7 @@ jobs:
     #  run: |
     #    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-jerrykuku   
   
-    - name: Configuration Customization - Build_GLINET_6416
+    - name: Configuration Customization - Build_OP_GLINET-6416
       env:
         CONFIG_FILE: 'glinet_6416.config'
       run: |
