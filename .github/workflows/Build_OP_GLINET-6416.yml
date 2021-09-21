@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OP_GLINET-6416
+name: Build OpenWrt-GLINET-6416
 
 on:
   repository_dispatch:
