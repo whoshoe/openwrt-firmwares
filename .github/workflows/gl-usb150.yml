@@ -1,4 +1,4 @@
-name: OpenWrt_GL-usb150
+name: OpenWrt_gl-usb150
 
 on:
   repository_dispatch:
