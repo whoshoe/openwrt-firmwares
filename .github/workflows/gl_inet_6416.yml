@@ -1,4 +1,4 @@
-name: Newifi D2
+name: gl_inet_6416
 
 on:
   repository_dispatch:
