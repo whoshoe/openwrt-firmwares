@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 #
 #Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
 #
@@ -11,9 +11,9 @@
 #
 
 # Uncomment a feed source
-echo 'src-git helloworld https://github.com/fw876/helloworld'>>feeds.conf.default
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages'>>feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small'>>feeds.conf.default
+#echo 'src-git helloworld https://github.com/fw876/helloworld'>>feeds.conf.default
+#echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages'>>feeds.conf.default
+#echo 'src-git small https://github.com/kenzok8/small'>>feeds.conf.default
 #echo 'src-git wiringPi https://github.com/nmaas87/rpi-openwrt-packages.git'>>feeds.conf.default
 ./scripts/feeds update -a && ./scripts/feeds install -a
 
