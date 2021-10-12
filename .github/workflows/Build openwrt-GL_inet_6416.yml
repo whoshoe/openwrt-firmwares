@@ -1,4 +1,4 @@
-name: gl_inet_6416
+name: Build openwrt-GL_inet_6416
 
 on:
   repository_dispatch:
