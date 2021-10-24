@@ -1,4 +1,4 @@
-name: Build openwrt-Nanopi_R4S
+name: Build openwrt_Nanopi_R4S
 
 on:
   repository_dispatch:
