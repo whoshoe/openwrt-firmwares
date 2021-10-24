@@ -1,4 +1,4 @@
-name: Newifi D2
+name: Build openwrt_Newifi D2
 
 on:
   repository_dispatch:
