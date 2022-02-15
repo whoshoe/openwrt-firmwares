@@ -1,4 +1,4 @@
-name: Linksys WRT32X WYC
+name: Linksys WRT32X WYC-2020
 
 on:
   repository_dispatch:
