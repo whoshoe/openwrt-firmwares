@@ -1,4 +1,4 @@
-name: Linksys WRT32X
+name: Linksys WRT32X Original
 
 on:
   repository_dispatch:
